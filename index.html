@@ -795,6 +795,13 @@
       transition: transform 1.2s cubic-bezier(.2,.7,.2,1);
     }
     .founder-cinema:hover .founder-image img { transform: scale(1.04); }
+    .founder-cinema-reverse { grid-template-columns: 1fr 1.05fr; }
+    .founder-cinema-reverse .founder-image::after {
+      background:
+        linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.4) 100%),
+        linear-gradient(270deg, transparent 60%, rgba(8,17,11,0.6) 100%);
+    }
+    .founder-cinema .founder-image img.tall { object-position: 50% 20%; }
     .founder-image::after {
       content: "";
       position: absolute;
@@ -1356,7 +1363,7 @@
         </div>
         <div class="founder-cinema reveal">
           <div class="founder-image">
-            <img src="assets/akinmo  4 wheeler.jpg" alt="Akanimo Sam — Co-founder, DriftMark" />
+            <img src="assets/akanimo-suit.jpg" alt="Akanimo Sam — Co-founder, DriftMark" />
             <div class="name-overlay">
               <span class="role">Co-founder</span>
               <span class="name">Akanimo Sam</span>
@@ -1368,7 +1375,7 @@
               Built with the spirit of excellence — connecting infrastructure, operations, people, and markets into one serious long-term platform.
             </p>
             <p>
-              <strong style="color:#fff;">Jon Dipilato &amp; Akanimo Sam</strong> — co-founders of an infrastructure-first company designed to outlast the cycle.
+              On-the-ground execution, supplier networks, and operational discipline across waste, logistics, and agro storage.
             </p>
             <p>
               DriftMark is the discipline to do what most won't: build the connective tissue between waste, logistics, data, and agro that the next generation of African cities will run on.
@@ -1387,6 +1394,35 @@
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                 Connect with Akanimo on X
               </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="founder-cinema reveal founder-cinema-reverse" style="margin-top: 48px;">
+          <div class="founder-content">
+            <span class="pill gold" style="align-self:flex-start;"><span class="dot"></span>The Co-founders</span>
+            <p class="pull-quote">
+              Two operators. One playbook. Built to compound across waste, logistics, agro, and data.
+            </p>
+            <p>
+              <strong style="color:#fff;">Jon Dipilato &amp; Akanimo Sam</strong> — co-founders of an infrastructure-first company designed to outlast the cycle. Jon leads systems, automation, and capital strategy from the U.S.; Akanimo leads on-the-ground operations, supplier networks, and execution across Nigeria.
+            </p>
+            <p>
+              Together they pair Western capital discipline with African operational reach — the rare combination that turns infrastructure into a durable, multi-revenue platform.
+            </p>
+            <span class="signature">— Jon Dipilato &amp; Akanimo Sam</span>
+
+            <div class="founder-traits">
+              <div class="trait"><span class="label">Jon Dipilato</span><strong>Systems · Capital · Strategy</strong></div>
+              <div class="trait"><span class="label">Akanimo Sam</span><strong>Operations · Supply · Execution</strong></div>
+              <div class="trait"><span class="label">Together</span><strong>Infrastructure-first</strong></div>
+            </div>
+          </div>
+          <div class="founder-image">
+            <img src="assets/jon-and-akanimo.png" alt="Jon Dipilato and Akanimo Sam — Co-founders, DriftMark" />
+            <div class="name-overlay">
+              <span class="role">Co-founders</span>
+              <span class="name">Jon Dipilato &amp; Akanimo Sam</span>
             </div>
           </div>
         </div>
