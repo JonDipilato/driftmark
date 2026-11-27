@@ -6,6 +6,7 @@
   <title>DriftMark Holdings | Scrap recovery and palm farming in Onna, Akwa Ibom</title>
   <meta name="description" content="DriftMark Holdings. Scrap recovery and palm farming in Onna, Akwa Ibom, Nigeria." />
   <meta name="theme-color" content="#07111d" />
+  <link rel="canonical" href="https://driftmark-iota.vercel.app/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="DriftMark Holdings" />
   <meta property="og:description" content="Scrap recovery and palm farming in Onna, Akwa Ibom, Nigeria." />
@@ -14,7 +15,7 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2307111d'/%3E%3Cpath d='M8 7v18h6c6 0 10-3 10-9s-4-9-10-9z' fill='none' stroke='%23f5b84a' stroke-width='2'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
   <style>
     :root {
       --ink: #07111d;
@@ -114,13 +115,13 @@
     .btn-line:hover { border-color: rgba(237, 244, 255, 0.4); }
 
     /* Sections */
-    main section { padding: var(--pad) 0; scroll-margin-top: 72px; }
+    main section { padding: var(--pad) 0; scroll-margin-top: 84px; }
     main section + section { border-top: 1px solid var(--line); }
 
     h2 {
       font-family: var(--display);
       font-weight: 500;
-      font-variation-settings: "opsz" 144;
+      font-variation-settings: "opsz" 72;
       font-size: clamp(2.4rem, 5.4vw, 4.25rem);
       line-height: 1;
       letter-spacing: -0.025em;
@@ -137,7 +138,7 @@
     .hero h1 {
       font-family: var(--display);
       font-weight: 500;
-      font-variation-settings: "opsz" 144;
+      font-variation-settings: "opsz" 72;
       font-size: clamp(3.25rem, 8.4vw, 7rem);
       line-height: 0.94;
       letter-spacing: -0.035em;
@@ -158,12 +159,11 @@
       border-radius: 6px;
       overflow: hidden;
       border: 1px solid var(--line);
-      aspect-ratio: 3 / 4;
-      max-height: 78vh;
+      aspect-ratio: 6 / 5;
       justify-self: end;
       width: 100%;
     }
-    .hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
 
     /* Scrap + Palm */
     .lines {
@@ -171,7 +171,7 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: clamp(48px, 7vw, 112px);
     }
-    .lines section { padding: 0; border: 0; }
+    .lines section { padding: 0; border: 0; scroll-margin-top: 124px; }
     .lines p {
       margin-top: 24px;
       max-width: 34ch;
@@ -206,7 +206,7 @@
     .row h3 {
       font-family: var(--display);
       font-weight: 400;
-      font-variation-settings: "opsz" 144;
+      font-variation-settings: "opsz" 72;
       font-size: clamp(1.75rem, 3.6vw, 3rem);
       line-height: 1.05;
       letter-spacing: -0.02em;
@@ -232,14 +232,14 @@
     .today .cert { color: var(--paper-ink); }
 
     /* Volumes */
-    .volumes .note { margin-top: 28px; max-width: 46ch; color: var(--soft); }
+    .volumes .note { margin-top: 28px; max-width: 40ch; font-size: clamp(1.1875rem, 2vw, 1.5rem); line-height: 1.4; color: var(--text); }
     .volumes .figure {
-      margin-top: 20px;
+      margin-top: 36px;
       font-family: var(--display);
       font-weight: 400;
-      font-variation-settings: "opsz" 144;
+      font-variation-settings: "opsz" 72;
       font-variant-numeric: lining-nums tabular-nums;
-      font-size: clamp(4.5rem, 16vw, 13rem);
+      font-size: clamp(4rem, 12vw, 9.5rem);
       line-height: 0.9;
       letter-spacing: -0.04em;
       color: var(--gold);
@@ -268,6 +268,8 @@
       text-decoration: none;
       overflow-wrap: anywhere;
       font-variant-numeric: lining-nums;
+      display: block;
+      padding: 12px 0;
     }
     .contact-row a:hover { color: var(--gold); }
     .deck { margin-top: 32px; color: var(--soft); }
@@ -279,7 +281,7 @@
 
     @media (max-width: 900px) {
       .hero-grid, .lines { grid-template-columns: 1fr; }
-      .hero-photo { justify-self: start; max-height: 70vh; }
+      .hero-photo { justify-self: start; }
       .row { grid-template-columns: 1fr; }
       .nav-links { display: none; }
     }
@@ -289,7 +291,7 @@
     }
   </style>
 </head>
-<body>
+<body id="top">
   <header>
     <div class="container nav">
       <a class="brand" href="#top" aria-label="DriftMark Holdings, back to top">
@@ -313,7 +315,7 @@
     </div>
   </header>
 
-  <main id="top">
+  <main>
     <section class="hero">
       <div class="container hero-grid">
         <div>
