@@ -172,6 +172,14 @@
       gap: clamp(48px, 7vw, 112px);
     }
     .lines section { padding: 0; border: 0; scroll-margin-top: 124px; }
+    .lines figure {
+      margin: 0 0 clamp(28px, 4vw, 44px);
+      aspect-ratio: 4 / 5;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+    }
+    .lines figure img { width: 100%; height: 100%; object-fit: cover; }
     .lines p {
       margin-top: 24px;
       max-width: 34ch;
@@ -332,6 +340,7 @@
     <section aria-label="What we do">
       <div class="container lines">
         <section id="scrap">
+          <figure><img src="assets/scrap-tricycle-bottles.jpg" width="1100" height="1315" loading="lazy" alt="A red tricycle carrying a large netted bale of plastic bottles, with people standing beside it." /></figure>
           <h2>Scrap</h2>
           <p>We buy and collect PET bottles, heavy plastic, cartons, aluminium cans and nylon from households, traders and collection points across Akwa Ibom, sort it in our yard and sell it to processors.</p>
           <ul>
@@ -343,6 +352,7 @@
           </ul>
         </section>
         <section id="palm">
+          <figure><img src="assets/field-operations-2.jpg" width="960" height="1280" loading="lazy" alt="A man in work boots and gloves standing in a planted field, with palm trees behind him." /></figure>
           <h2>Palm</h2>
           <p>We lease existing plantations, harvest the fruit, have it milled by a third party and sell palm oil and palm kernel.</p>
           <ul>
